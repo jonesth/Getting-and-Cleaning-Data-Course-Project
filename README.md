@@ -7,7 +7,7 @@ The repository contains the run_analysis.R script.  This script merges the 'trai
 
 Approach
 
-- Load reshape2 package to use later
+- Load the reshape2 package to use later
 - Merge the 'training' and 'test' data sets to create one data set
 - Extract only the mean and standard deviation for each measurement
 - Label the data set with descriptive activity names
