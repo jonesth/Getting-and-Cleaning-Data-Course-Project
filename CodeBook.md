@@ -12,32 +12,59 @@ Activity - The type of activity performed (WALKING , WALKING_UPSTAIRS, WALKING_D
 •	tBodyAccMeanY
 
 •	tBodyAccMeanZ
+
 •	tBodyAccStdX
+
 •	tBodyAccStdY
+
 •	tBodyAccStdZ
+
 •	tGravityAccMeanX
+
 •	tGravityAccMeanY
+
 •	tGravityAccMeanZ
+
 •	tGravityAccStdX
+
 •	tGravityAccStdY
+
 •	tGravityAccStdZ
+
 •	tBodyAccJerkMeanX
+
 •	tBodyAccJerkMeanY
+
 •	tBodyAccJerkMeanZ
+
 •	tBodyAccJerkStdX
+
 •	tBodyAccJerkStdY
+
 •	tBodyAccJerkStdZ
+
 •	tBodyGyroMeanX
+
 •	tBodyGyroMeanY
+
 •	tBodyGyroMeanZ
+
 •	tBodyGyroStdX
+
 •	tBodyGyroStdY
+
 •	tBodyGyroStdZ
+
 •	tBodyGyroJerkMeanX
+
 •	tBodyGyroJerkMeanY
+
 •	tBodyGyroJerkMeanZ
+
 •	tBodyGyroJerkStdX
+
 •	tBodyGyroJerkStdY
+
 •	tBodyGyroJerkStdZ
 
 •	tBodyAccMagMean
@@ -57,15 +84,25 @@ Activity - The type of activity performed (WALKING , WALKING_UPSTAIRS, WALKING_D
 •	tBodyGyroMagStd
 
 •	tBodyGyroJerkMagMean
+
 •	tBodyGyroJerkMagStd
+
 •	fBodyAccMeanX
+
 •	fBodyAccMeanY
+
 •	fBodyAccMeanZ
+
 •	fBodyAccStdX
+
 •	fBodyAccStdY
+
 •	fBodyAccStdZ
+
 •	fBodyAccMeanFreqX
+
 •	fBodyAccMeanFreqY
+
 •	fBodyAccMeanFreqZ
 
 •	fBodyAccJerkMeanX
