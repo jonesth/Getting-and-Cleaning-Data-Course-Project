@@ -87,3 +87,10 @@ Activity - The type of activity performed (WALKING , WALKING_UPSTAIRS, WALKING_D
 •	fBodyBodyGyroJerkMagStd
 •	fBodyBodyGyroJerkMagMeanFreq
 
+## Activity Labels
+•	WALKING (value 1): the subject was walking during the test
+•	WALKING_UPSTAIRS (value 2): the subject was walking up a staircase during the test
+•	WALKING_DOWNSTAIRS (value 3): the subject was walking down a staircase during the test
+•	SITTING (value 4): the subject was sitting during the test
+•	STANDING (value 5): the subject was standing during the test
+•	LAYING (value 6): the subject was laying down during the test
