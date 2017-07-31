@@ -1,5 +1,5 @@
 # CodeBook
-Description of the variables contained in tidy.txt
+Description of the variables contained in run_analysis.R
 
 # Read data and load labels and features
 filename: name of downloaded raw dataset
