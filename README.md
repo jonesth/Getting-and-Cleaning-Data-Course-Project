@@ -6,7 +6,11 @@ The repository contains the run_analysis.R script. This script merges the 'train
 
 # Approach	
 •	Load the reshape2 package to use later
+
 •	Merge the 'training' and 'test' data sets to create one data set
+
 •	Extract only the mean and standard deviation for each measurement
+
 •	Label the data set with descriptive activity names
+
 •	Create a second, independent tidy data set (tidy.txt) with the average of each variable for each activity and each subject
