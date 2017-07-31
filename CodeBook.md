@@ -1,179 +1,26 @@
 # CodeBook
 Description of the variables contained in tidy.txt
 
-## Identifiers
-Subject - The ID of the test subject
-
-Activity - The type of activity performed (WALKING , WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-
-## Measurements (mean or standard deviation)
-•	tBodyAccMeanX 
-
-•	tBodyAccMeanY
-
-•	tBodyAccMeanZ
-
-•	tBodyAccStdX
-
-•	tBodyAccStdY
-
-•	tBodyAccStdZ
-
-•	tGravityAccMeanX
-
-•	tGravityAccMeanY
-
-•	tGravityAccMeanZ
-
-•	tGravityAccStdX
-
-•	tGravityAccStdY
-
-•	tGravityAccStdZ
-
-•	tBodyAccJerkMeanX
-
-•	tBodyAccJerkMeanY
-
-•	tBodyAccJerkMeanZ
-
-•	tBodyAccJerkStdX
-
-•	tBodyAccJerkStdY
-
-•	tBodyAccJerkStdZ
-
-•	tBodyGyroMeanX
-
-•	tBodyGyroMeanY
-
-•	tBodyGyroMeanZ
-
-•	tBodyGyroStdX
-
-•	tBodyGyroStdY
-
-•	tBodyGyroStdZ
-
-•	tBodyGyroJerkMeanX
-
-•	tBodyGyroJerkMeanY
-
-•	tBodyGyroJerkMeanZ
-
-•	tBodyGyroJerkStdX
-
-•	tBodyGyroJerkStdY
-
-•	tBodyGyroJerkStdZ
-
-•	tBodyAccMagMean
-
-•	tBodyAccMagStd
-
-•	tGravityAccMagMean
-
-•	tGravityAccMagStd
-
-•	tBodyAccJerkMagMean
-
-•	tBodyAccJerkMagStd
-
-•	tBodyGyroMagMean
-
-•	tBodyGyroMagStd
-
-•	tBodyGyroJerkMagMean
-
-•	tBodyGyroJerkMagStd
-
-•	fBodyAccMeanX
-
-•	fBodyAccMeanY
-
-•	fBodyAccMeanZ
-
-•	fBodyAccStdX
-
-•	fBodyAccStdY
-
-•	fBodyAccStdZ
-
-•	fBodyAccMeanFreqX
-
-•	fBodyAccMeanFreqY
-
-•	fBodyAccMeanFreqZ
-
-•	fBodyAccJerkMeanX
-
-•	fBodyAccJerkMeanY
-
-•	fBodyAccJerkMeanZ
-
-•	fBodyAccJerkStdX
-
-•	fBodyAccJerkStdY
-
-•	fBodyAccJerkStdZ
-
-•	fBodyAccJerkMeanFreqX
-
-•	fBodyAccJerkMeanFreqY
-
-•	fBodyAccJerkMeanFreqZ
-
-•	fBodyGyroMeanX
-
-•	fBodyGyroMeanY
-
-•	fBodyGyroMeanZ
-
-•	fBodyGyroStdX
-
-•	fBodyGyroStdY
-
-•	fBodyGyroStdZ
-
-•	fBodyGyroMeanFreqX
-
-•	fBodyGyroMeanFreqY
-
-•	fBodyGyroMeanFreqZ
-
-•	fBodyAccMagMean
-
-•	fBodyAccMagStd
-
-•	fBodyAccMagMeanFreq
-
-•	fBodyBodyAccJerkMagMean
-
-•	fBodyBodyAccJerkMagStd
-
-•	fBodyBodyAccJerkMagMeanFreq
-
-•	fBodyBodyGyroMagMean
-
-•	fBodyBodyGyroMagStd
-
-•	fBodyBodyGyroMagMeanFreq
-
-•	fBodyBodyGyroJerkMagMean
-
-•	fBodyBodyGyroJerkMagStd
-
-•	fBodyBodyGyroJerkMagMeanFreq
-
-## Activity Labels
-•	WALKING (value 1): the subject was walking during the test
-
-•	WALKING_UPSTAIRS (value 2): the subject was walking up a staircase during the test
-
-•	WALKING_DOWNSTAIRS (value 3): the subject was walking down a staircase during the test
-
-•	SITTING (value 4): the subject was sitting during the test
-
-•	STANDING (value 5): the subject was standing during the test
-
-•	LAYING (value 6): the subject was laying down during the test
+## Read data and load labels and features
+filename: name of downloaded raw dataset
+activityLabels: load the activity labels 
+features: load the features
+
+## Extract only mean() and std()
+featuresWant: extracts only the features with Mean or Standard Deviation calculations 
+
+## Change column labels of data set
+featuresWant.names: a vector of 'clean' feature names
+
+## Adding Subject and Activity to the data set
+trainActivities: loads the train activities from the Y_train.txt file 
+trainSubjects: loads the train subjects from the subject_train.txt file 
+train: loads the featuresWant dataset into an initial table called 'train', and then binds the trainActivities and trainSubjects with the original 'train' to create a new 'train' table
+testActivities: loads the test activities from the Y_test.txt file 
+testSubjects: loads the test subjects from the subject_test.txt file 
+test: loads the featuresWant dataset into an initial table called 'test', and then binds the testActivities and testSubjects with the original 'test' to create a new 'test' table 
+
+## Output tidy data
+allData: merges the 'train' and 'test' tables together 
+allDataMelted: melts the (wide) 'allData' data frame into a long-format data frame under 'subject' and 'activity' 
+allDataMean: takes the long-format of allDataMelted and casts it into a wide-format data frame under 'subject', 'activity' and the mean variables  
