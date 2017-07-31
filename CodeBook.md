@@ -1,4 +1,4 @@
-## CodeBook
+# CodeBook
 Description of the variables contained in tidy.txt
 
 # Read data and load labels and features
